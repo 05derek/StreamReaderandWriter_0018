@@ -1,6 +1,8 @@
 
-    catch (int a) {
-        //blok ini akan di ekskusi
-        cout << "Pengecualian akan diekskusi" << endl;
+    catch (...) {
+        /*jika selain integer maka block ini akan diekskusi*/
+        cout << "default Pengecualian diekskusi" << endl;
     }
+
+    return 0;
 }
