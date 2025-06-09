@@ -1,13 +1,13 @@
 
+    //selesai dalam menulis sekarang tutup filenya
+    outfile.close();
 
-    //unlimited loop untuk menulis
-    while (true) {
-        cout << "- ";
-        //mendapatkan setiap karakter dalam satu baris
-        getline(cin, baris);
-        //loop akan berhenti jika anda memasukkan karakter q
-        if (baris == "q" ) break;
-        //menulis dan memasukkan nilai dari 'baris' ke dalam file
-        outfile << baris << endl;
-    }
+    //oprasi file dalam mode membaca
+    ifstream infile;
+    //enunjuk ke sebuah file untuk membuka
+    infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka dan membaca file " << endl;
+    //jika file ada maka
+    if (infile.is_open())
 }
